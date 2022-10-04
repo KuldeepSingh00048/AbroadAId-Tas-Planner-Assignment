@@ -8,7 +8,7 @@ const Dashboard = () => {
   const navigate = useNavigate();
   const callDashboard = async () => {
     try {
-      const res = await fetch("/dashboard", {
+      const res = await fetch("/dashboard-data", {
         method: "GET",
         headers: {
           Accept: 'application/json',

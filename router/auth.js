@@ -97,7 +97,7 @@ router.post('/login',async (req,res) =>{
     
 })
 
-router.get("/dashboard", authenticate,(req,res) =>{
+router.get("/dashboard-data", authenticate,(req,res) =>{
     res.send(req.rootUser);
     console.log('hello dashboard')
 });
