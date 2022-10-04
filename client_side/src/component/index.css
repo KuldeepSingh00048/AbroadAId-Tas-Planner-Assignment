@@ -1,0 +1,19 @@
+.createinput{
+  padding: 4px;
+  margin: 2px;
+  border-radius: 5px;
+  width: 400px;
+  color: rgb(79 70 229);
+}
+@media only screen and (max-width: 760px){
+
+  .home{
+    display: flex;
+    flex-direction: column;
+  }
+  .createinput{
+    width: auto;
+  }
+
+
+}
