@@ -19,9 +19,9 @@ app.use(express.urlencoded())
 //acquiring database
 require('./database_mongoose/DBconnection');
 
-app.get("/",(req,res) =>{
-    res.send("this is server side");
-});
+// app.get("/",(req,res) =>{
+//     res.send("this is server side");
+// });
 
 //post request
 app.use(require('./router/auth'));
