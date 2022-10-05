@@ -1,15 +1,15 @@
-const express =require('express')
+const express = require('express')
 const app = express();
 const cors = require('cors')
 const mongoose = require('mongoose');
 
-const User=require('./model/user_schema')
+const User = require('./model/user_schema')
 const dotenv = require('dotenv')
-const cookieParser= require('cookie-parser');
+const cookieParser = require('cookie-parser');
 
-dotenv.config({path:'./.env'})
+dotenv.config({ path: './.env' })
 // const port = 4000
-const port = process.env.PORT||4000
+const port = process.env.PORT || 4000
 
 app.use(cors())
 app.use(cookieParser());
@@ -26,18 +26,17 @@ require('./database_mongoose/DBconnection');
 //post request
 app.use(require('./router/auth'));
 
-if(process.env.NODE_ENV == "production")
-{
+if (process.env.NODE_ENV == "production") {
     app.use(express.static("client_side/build"));
+    app.get("/*", function (req, res) {
+        res.sendFile(path.join(__dirname, "./client_side/build/index.html"))
+})
 }
 //port number
-app.listen(port, ()=>{ 
-        console.log(`server running on prot number ${port}`)
-        
-    })
-    
-    
+app.listen(port, () => {
+    console.log(`server running on prot number ${port}`)
 
+})
 
 
 
@@ -86,13 +85,10 @@ app.listen(port, ()=>{
 
 
 
-    
 
 
 
 
-    
-    
 
 
 
@@ -103,14 +99,20 @@ app.listen(port, ()=>{
 
 
 
-    
-    
-    
 
 
 
-    
-    
+
+
+
+
+
+
+
+
+
+
+
     // const routeUrl = require('./routes/routes')
     // const express = require('express');
 // const app = express();
@@ -127,7 +129,7 @@ app.listen(port, ()=>{
 // app.use(cors())
 // app.use(express.json());
 // app.use("/",require('./router/auth'));
-// // // 
+// // //
 // // app.get('/',(req,res) => {
 // //     res.send(`this is home page`)
 // // })
