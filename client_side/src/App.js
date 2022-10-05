@@ -4,7 +4,7 @@ import Footer from './component/footer';
 import Home from './component/home';
 import CreateWork from './component/creatework';
 import Dashboard from './component/dashboard';
-import ShowWork from './component/yourwork';
+// import ShowWork from './component/yourwork';
 import Signup from './component/signup';
 import Signin from './component/signin';
 import { Routes, Route } from "react-router-dom";
@@ -18,7 +18,7 @@ const App =()=> {
             <Route path='/dashboard' element={<Dashboard />} />
             <Route exact path='/' element={<Home />} />
             <Route path='/create' element={<CreateWork/>} />
-            <Route path='/show' element={<ShowWork/>} />
+            {/* <Route path='/show' element={<ShowWork/>} /> */}
             <Route path='/signup' element={<Signup/>} />
             <Route path='/signin' element={<Signin/>} />
             {/* <Route path='/booking/:cityname' element={<Booking />} /> */}
