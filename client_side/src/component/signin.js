@@ -58,8 +58,8 @@ const Signin = () => {
           onChange={handleChange}
           />
         <br />
-        <button onClick={signin} type="submit"   className='bg-gradient-to-r from-green-500 to-lime-500 w-auto text-lg px-2 rounded-lg font-bold hover:text-base active:bg-yellow-300 mb-2 ' >Signin</button>
-        <br/>Don't have account??..<NavLink className='font-semibold text-white hover:text-violet-900' to='/signup'>Signup first</NavLink>
+        <button onClick={signin} type="submit"   className='bg-gradient-to-r from-green-500 to-lime-500 w-auto text-lg px-2 rounded-lg font-bold hover:text-base active:bg-yellow-300 mb-2 ' >Sign in</button>
+        <br/>Don't have account??..<NavLink className='font-semibold text-white hover:text-violet-900' to='/signup'>Sign up first</NavLink>
       </form>
       
     </div>
