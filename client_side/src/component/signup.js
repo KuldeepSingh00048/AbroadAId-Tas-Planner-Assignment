@@ -46,7 +46,7 @@ const Signup = () => {
       <form onSubmit={register} className=' flex-col rounded-xl  bg-opacity-60  flex-wrap w-96  h-auto bg-indigo-400 '>
         <h1 className='my-1 text-4xl font-bold'> Sign Up</h1>
 
-        <input type="text" className='my-3 border-2 rounded-lg border-black p-1 text-indigo-600 font-semibold' placeholder="Enter your Password"
+        <input type="text" className='my-3 border-2 rounded-lg border-black p-1 text-indigo-600 font-semibold' placeholder="Enter your Name"
           name='name'
           value={user.name}
           onChange={handleChange}
